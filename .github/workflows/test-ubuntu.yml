@@ -1,5 +1,8 @@
 name: Test Ubuntu
 on:
+  push:
+    branches: # 테스트용
+      - deploy/deploy-library
   pull_request:
     branches:
       - main

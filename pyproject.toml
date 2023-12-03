@@ -3,7 +3,7 @@ name = "pcfl"
 version = "1.0.0"
 description = "Pinao Compensator for FLstudio"
 authors = ["recoma <seokbong60@gmail.com>"]
-license = {file = "LICENSE"}
+license = "MIT"
 readme = "README.md"
 repository = "https://github.com/skywinz/pcfl"
 classifiers = [
