@@ -1,8 +1,5 @@
 name: Test Windows
 on:
-  push:
-    branches: # 테스트용
-      - deploy/deploy-library
   pull_request:
     branches:
       - main
@@ -34,5 +31,4 @@ jobs:
       - name: Run Test
         run: |
           $env:Path += ';' + $env:APPDATA + '\pypoetry\venv\Scripts'
-          poetry run python -m coverage run -m unittest
-          poetry run python -m coverage xml
+          poetry run pytest
