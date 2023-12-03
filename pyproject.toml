@@ -1,10 +1,22 @@
 [tool.poetry]
 name = "pcfl"
-version = "0.1.0"
+version = "1.0.0"
 description = "Pinao Compensator for FLstudio"
 authors = ["recoma <seokbong60@gmail.com>"]
-license = "GPL-3.0"
+license = {file = "LICENSE"}
 readme = "README.md"
+repository = "https://github.com/skywinz/pcfl"
+classifiers = [
+    "Operating System :: POSIX :: Linux",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Intended Audience :: End Users/Desktop",
+
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
