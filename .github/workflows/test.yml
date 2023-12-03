@@ -28,7 +28,6 @@ jobs:
       - name: Install Python Dependency
         run: |
           poetry install
-          poetry install --with-dev
 
       - name: Run Test
         run: poetry run pytest
