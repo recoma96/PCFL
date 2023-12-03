@@ -1,5 +1,16 @@
 # pcfl
 
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/skywinz/pcfl/test-ubuntu.yml?label=test-ubuntu)
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/skywinz/pcfl/test-windows.yml?label=test-windows)
+[![CI](https://github.com/skywinz/pcfl/actions/workflows/ci.yml/badge.svg)](https://github.com/skywinz/pcfl/actions/workflows/ci.yml)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pcfl?logo=python&logoColor=white)
+![PyPI - Version](https://img.shields.io/pypi/v/pcfl)
+![GitHub](https://img.shields.io/github/license/skywinz/pcfl)
+
+
+
+
+
 * MuseScore4에서 FL Studio에 피아노 페달(CC64)이 포함된 미디파일을 임포트할 때, 페달 사이의 간격을 벌려 정상적으로 임포트를 하게 하는
 전처리 라이브러리 및 프로그램 입니다.
 * 페달이 연속으로 붙어있는 미디파일을 FL Studio에 임포트 하면 그 두 개의 페달이 하나로 합쳐저 불협화음을 발생시킵니다.
@@ -14,6 +25,7 @@ $ pip install pcfl
 
 ## Installation (As Dev)
 ```shell
+$ git clone https://github.com/skywinz/pcfl.git
 $ poetry install
 ```
 
