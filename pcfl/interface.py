@@ -1,6 +1,6 @@
 import argparse
 
-from pcfl import __version__, pcfl
+from pcfl import __version__, pcfl_by_file
 
 
 class _Parser:
@@ -24,11 +24,6 @@ class _Parser:
             required=True
         )
         parser.add_argument(
-            "-i", "--interval",
-            type=float,
-            required=False, default=0.1
-        )
-        parser.add_argument(
             "-o", "--output",
             type=str,
             required=False, default="result.mid",
@@ -46,6 +41,6 @@ class CommandLineInterface:
             case "run":
                 kwargs = self.parser.runner.parse_args(args)
                 try:
-                    pcfl(**kwargs.__dict__)
+                    pcfl_by_file(**kwargs.__dict__)
                 except Exception as e:
                     print(f"[ERROR]: {str(e)}")

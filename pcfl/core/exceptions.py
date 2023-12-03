@@ -14,5 +14,4 @@ class NotAMidiFile(FileException):
 class IsLinkFile(FileException):
     str_format = "{file} is not link-file. pcfl cannot use this."
 
-
-class NumberRangeException(Exception): ...
+class MidiParseFailedException(Exception): ...
